@@ -207,6 +207,19 @@ p{
     border: 1px solid white;
 }
 
+.sa .retake a{
+    text-decoration: none;
+    color: white;
+}
+
+.retake{
+    background-color: #876464;
+    border-radius: 10px;
+    font-family: 'courgette', cursive;
+    font-size: 14px; 
+    color: white;
+    border: 1px solid white;
+}
 .next{
 	background-color: #F5DDB0;
     border-radius: 10px;
