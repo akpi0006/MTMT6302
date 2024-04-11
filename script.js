@@ -25,10 +25,10 @@ const questionTemplate = `
             <p>${questions[0].question}</p>
             <br>
 
-
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
             <div class="qoptions">
             <li>
-                <input type="checkbox" name="question1" value="var">${questions[0].answers.answer_a}
+                <input type="checkbox" class="ans" data-answ="answer_a" name="question1" value="var">${questions[0].answers.answer_a}
             </li>
             <li>
                 <input type="checkbox" name="question1" value="let">${questions[0].answers.answer_b}
@@ -70,7 +70,7 @@ container.innerHTML = questionTemplate;
 /*** async / await */
 async function getQuestions(difficulty){
     const response =  await fetch(`https://quizapi.io/api/v1/questions?apiKey=fIzlzqCAAPKQnXiToNo61XYMfZmRhDdhEseZCtMj&limit=5&difficulty=${difficulty}`)
-    question = await response.json()
+    const question = await response.json()
     console.log(question)
     questions = question
     buildQuestion(question)
@@ -91,6 +91,12 @@ container.addEventListener('click', function(e){
     getQuestions(e.target.dataset.difficulty)
         console.log('clicked')
     }
+    else if(e.target.classList.contains('ans')){
+        console.log(e.target.dataset.answ)
+        // getAns(e.target.dataset.answ)
+        //1. save answers, question
+        //2. display the next question
+        }
 
 })
 
