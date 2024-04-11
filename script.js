@@ -69,7 +69,7 @@ container.innerHTML = questionTemplate;
 
 /*** async / await */
 async function getQuestions(difficulty){
-    const response =  await fetch(`https://quizapi.io/api/v1/questions?apiKey=fIzlzqCAAPKQnXiToNo61XYMfZmRhDdhEseZCtMj&limit=1&difficulty=${difficulty}`)
+    const response =  await fetch(`https://quizapi.io/api/v1/questions?apiKey=fIzlzqCAAPKQnXiToNo61XYMfZmRhDdhEseZCtMj&limit=5&difficulty=${difficulty}`)
     question = await response.json()
     console.log(question)
     questions = question
@@ -93,5 +93,16 @@ container.addEventListener('click', function(e){
     }
 
 })
+
+
+//show only 10 questions and enable the user to select only one answer per question
+
+// function displayResults() {
+//     quizContainer.classList.add('hidden');
+//     navigation.classList.add('hidden');
+//     resultsDiv.classList.remove('hidden');
+//     resultsDiv.innerHTML = <p>You correctly answered ${correctAnswersCount} out of ${questions.length} questions.</p>;
+// }
+
 
 //track the number of correct and incorrect answers and store them in local storage. You need to implement this functionality. You can use localStorage.setItem() to store values and localStorage.getItem() to retrieve them.
