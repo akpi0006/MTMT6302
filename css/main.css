@@ -1,0 +1,335 @@
+html{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+body{
+    background-color: #390000;
+    margin: 0;
+    padding: 0;
+}
+  
+.title{
+    color: #fff;
+    text-align: center;
+    margin-block-start: 0%;
+    font-size: 60px;
+    font-family: 'Courgette', cursive;
+    font-weight: 400;
+    padding: 20px;
+    
+}
+.title a{
+    text-decoration: none;
+    color: #fff;
+}
+
+h2 a{
+    text-decoration: none;
+    color: #390000;
+}
+
+h3{
+    background-color: #F5DDB0;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 100px;
+    color: #361F1F;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 0;
+}
+.qanda h3{
+    border-radius: 20px;
+}
+.questions li{
+    list-style: none;
+    list-style-type: none;
+   text-align: right;
+}
+
+.intro p strong{
+    font-family: 'Courgette', cursive;
+}
+p{
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pickone{
+    width: 100%;
+    padding: 30px;
+    font-weight: bold;
+    margin-top: 0;
+    text-align: center;
+	background: #F5DDB0;
+	transition: 5s;
+    font-family: 'courgette', cursive;
+    
+}
+
+.pickonebtn{
+    width: 300px;
+}
+
+
+.pickone:hover {
+	background: #F5DDB0;
+	
+}
+
+.options a{
+    text-decoration: none;
+    color: #390000;
+}
+
+.start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+    background-color: #270000;
+    padding: 10px;
+}
+.start div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.activebox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+.activebox a{
+    text-decoration: none;
+ }
+
+.activebox div {
+    color: white;
+    background-color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  
+}
+
+.active{
+    border: 5px solid #876464;
+    border-radius: 5%;
+}
+.text-primary {
+    color: black !important;
+}
+.activebox a {
+    text-decoration: none;
+    color: black; 
+}
+
+.activebox .list-group-item {
+    color: black; 
+}
+
+
+.gradebox div {
+    background-color: white;
+    width: 200px;
+   padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.gradebox div span {
+    color: black;
+}
+
+.gradebox .gradeline{
+    color: #000;
+    margin-bottom: 10px;
+ }
+
+
+.begin{
+    background-color:#876464;
+    padding: 10px;
+}
+
+.questions p{
+    color: #390000;
+    
+}
+.qoptions{
+    text-align: start; 
+}
+.questions li {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left; /* Changed from center to left */
+    font-size: 14px;
+    font-weight: lighter;
+    padding-left: 20px;
+}
+
+.question-number {
+    font-weight: bold;
+    border-bottom: 0.5px solid #000; /* You can adjust the color and thickness as needed */
+    margin-bottom: 10px; /* Adjust spacing as needed */
+    padding-bottom: 5px; /* Adjust spacing as needed */
+}
+
+.sa{
+    background-color: #876464;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sa .submit a{
+    text-decoration: none;
+    color: white;
+}
+
+.submit{
+    background-color: #876464;
+    border-radius: 10px;
+    font-family: 'courgette', cursive;
+    font-size: 14px; 
+    color: white;
+    border: 1px solid white;
+}
+
+.sa .retake a{
+    text-decoration: none;
+    color: white;
+}
+
+.retake{
+    background-color: #876464;
+    border-radius: 10px;
+    font-family: 'courgette', cursive;
+    font-size: 14px; 
+    color: white;
+    border: 1px solid white;
+}
+.next{
+	background-color: #F5DDB0;
+    border-radius: 10px;
+    font-family: 'courgette', cursive;
+    font-size: 14px; 
+    border: 1px solid rgb(88, 88, 88);
+}
+
+.nq{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.next a{
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+}
+
+.previous{
+	background-color: #F5DDB0;
+    border-radius: 10px;
+    font-family: 'courgette', cursive;
+    font-size: 14px; 
+    border: 1px solid rgb(88, 88, 88);
+}
+
+.pr{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.previous a{
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: end;
+}
+
+.next, .previous {
+    background-color: #F5DDB0;
+    border-radius: 10px;
+    font-family: 'courgette', cursive;
+    font-size: 14px; 
+    border: 1px solid rgb(88, 88, 88);
+    margin: 0; /* Remove default margin */
+}
+
+.next a, .previous a {
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+}
+
+/* Define styles for act and que sections */
+.act {
+    width: 50%; /* Initially set act section to occupy 50% of the width */
+}
+
+.que {
+    width: 50%; /* Initially set que section to occupy 50% of the width */
+}
+
+/* Flexbox layout for act and que sections */
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Display sections in a column layout */
+}
+
+.act,
+.que {
+    flex-grow: 1; /* Allow act and que sections to grow equally within the flex container */
+    width: 100%; }
+
+
+/* Media query for tablet/desktop mode */
+@media only screen and (min-width: 768px) {
+    .flex-container {
+        flex-direction: row; /* Display sections side by side */
+    }
+
+    .act {
+        order: 1; /* Move act section to the left */
+    }
+
+    .que {
+        order: 2; /* Move que section to the right */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer h2{
+    color: #390000;
+    font-size: 40px;
+    font-weight: lighter;
+    font-family: 'Courgette', cursive;
+}
